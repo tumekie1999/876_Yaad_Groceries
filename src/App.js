@@ -22,7 +22,7 @@ function App () {
                         <div className='remember'>
                             <label>
                                 <input type='checkbox'/>
-                                Remember me?
+                                Remember me
                             </label>
                             <a href='#'> Forgot password?</a>
                         </div>

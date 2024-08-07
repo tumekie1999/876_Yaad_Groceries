@@ -17,8 +17,8 @@ jobs:
     steps:
       - name: Set User Configurations
         run: |
-          git config --global user.name "Your Name"
-          git config --global user.email "your.email@example.com"
+          git config --global user.name "tumekie1999"
+          git config --global user.email "s849783@sbuniv.edu"
           chmod -R 777 .  # Change permissions as necessary
       - name: Disable  CI
         run: echo  "CI=false" >> $GITHUB_ENV

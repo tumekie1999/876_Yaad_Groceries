@@ -17,15 +17,11 @@
 }
 
 .cartItem img {
-  width: 150px;
-  height: 175px;
-  padding: 15px;
-  border-radius: 25px;
+  width: 200px;
 }
 
 .cartItem .description {
-  width: 80%;
-  height: 80%;
+  width: 100%;
   font-size: 30px;
 }
 

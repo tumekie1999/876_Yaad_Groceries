@@ -2,19 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "phosphor-react";
 import "./navbar.css";
-import logo from "../assets/products/logo.png";
+import logo from "../assets/products/logo.png"
 import SearchBar from './searchbar.jsx';
 
-export const Navbar = ({ setResults, setIsSearchPerformed }) => {
+export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
         <Link to="/"> 
-          <img src={logo} alt="logo" height={50} width={100} /> 
+          <img src={logo} alt="logo" height={65} width={100} /> 
         </Link>
       </div>
       <div>
-        <SearchBar setResults={setResults} setIsSearchPerformed={setIsSearchPerformed} />
+        <SearchBar/>
       </div>
       <div className="links">
         <Link to="/"> Shop </Link>

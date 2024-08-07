@@ -1,0 +1,35 @@
+.results {
+    margin-top: 50px;
+  }
+  
+  .results ul {
+    list-style-type:none;
+    padding: 0;
+    
+  }
+  
+  .results li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .results img {
+    margin-right: 10px;
+  }
+  
+  .results div {
+    display:inline-block;
+  }
+  
+  .results h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .results p {
+    margin: 0;
+    color: #555;
+  }
+  

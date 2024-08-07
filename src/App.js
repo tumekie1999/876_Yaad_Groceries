@@ -1,28 +1,44 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "./components/navbar";
-import { SignIn } from './pages/signin';
-import { Shop } from "./pages/shop/shop";
-import { Contact } from "./pages/contact";
-import { Cart } from "./pages/cart/cart";
-import { ShopContextProvider } from "./context/shop-context";
+import React from 'react';
+import './app.css';
+import { FaLock, FaUser } from 'react-icons/fa';
 
-function App() {
-  return (
-    <div className="App">
-      <ShopContextProvider>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Shop />} />
-            <Route path="/signin" element={<SignIn />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </Router>
-      </ShopContextProvider>
-    </div>
-  );
+function App () {
+
+    // const navigate = useNavigate();
+    return (
+        <div className='background'>
+            <div className='wrapper'>
+                <div className='form-box login'>
+                    <form action=''>
+                        <h1>Login</h1>
+                        <div className='input-box'>
+                            <input type='text' placeholder='Email/Username' required/>
+                            <FaUser className='icons'/>
+                        </div>
+                        <div className='input-box'>
+                            <input type='password' placeholder='Password' required/>
+                            <FaLock className='icons'/>
+                        </div>
+                        <div className='remember'>
+                            <label>
+                                <input type='checkbox'/>
+                                Remember me
+                            </label>
+                            <a href='#'> Forgot password?</a>
+                        </div>
+                        <button type='submit'>Login</button>
+                        <div className='register'>
+                            <p>Don't have an account?
+                                {/* <a href='#' onClick={() => navigate("/register")}> Register</a>   */}
+                            </p>   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    )
+    
 }
 
 export default App;

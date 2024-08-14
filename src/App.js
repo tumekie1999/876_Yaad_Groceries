@@ -1,8 +1,18 @@
 import React from 'react';
 
-function App() {
-  const value = 'Tumekie this is a wonderful day! HEY HEY!';
-  return <div>Hello {value}</div>;
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
 }
 
-export default App;
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}

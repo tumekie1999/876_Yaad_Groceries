@@ -1,27 +1,98 @@
 .navbar {
-    width: 100%;
-    height: 90px;
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 50px;
+}
+
+.searchbar {
+  flex-grow: 1; /* Allow the searchbar to take up available space */
+  margin: 0 20px; /* Add margin for spacing */
+}
+
+.searchbar input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+}
+
+.links p {
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      height: 70px;
+      padding: 0 10px;
   }
-  
+
+  .searchbar {
+      margin: 0 10px; /* Reduce margin for smaller screens */
+  }
+
+  .searchbar input {
+      font-size: 0.9rem; /* Reduce input font size for smaller screens */
+  }
+
+  .links p {
+      margin-left: 10px;
+      font-size: 0.9rem;
+  }
+
+  .logo img {
+      max-width: 80px;
+      max-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+  }
+
+  .searchbar {
+      width: 100%; /* Make searchbar full-width on smaller screens */
+      margin: 10px 0; /* Add top and bottom margin */
+  }
+
+  .searchbar input {
+      font-size: 0.8rem;
+      padding: 6px; /* Reduce padding for smaller screens */
+  }
+
   .links {
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-    color: white;
+      margin-top: 10px;
+      flex-direction: column;
   }
-  
-  .logo {
-    margin-right: 50px;
+
+  .links p {
+      margin: 5px 0;
+      font-size: 0.8rem;
   }
-  
-  .links a {
-    text-decoration: none;
-    color: white;
-    margin-left: 20px;
-    font-size: 25px;
+
+  .logo img {
+      max-width: 60px;
+      max-height: 30px;
   }
-  
+}

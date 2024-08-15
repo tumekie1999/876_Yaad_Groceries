@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="logo">
                 <img src={logo} alt="logo" height={50} width={100} /> 
             </div>
-            <div>
+            <div className='searchbar'>
                 <Searchbar/>
             </div>
             <div className="links">

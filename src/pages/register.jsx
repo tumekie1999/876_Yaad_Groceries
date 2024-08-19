@@ -1,9 +1,8 @@
 import React from "react";
 import './register.css';
-import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Register = () => {
-    const navigate = useNavigate();
     return (
         <div className='background'>
             <div className='wrapper'>
@@ -21,9 +20,7 @@ export const Register = () => {
                         </div>
                         <button type='submit'>Register</button>
                         <div className='Login'>
-                            <p>Already have an account?
-                                <a href='/signin' onClick={() => navigate("/signin")}> Login</a>  
-                            </p>   
+                            <Link to="/signin">Already have an account?</Link>   
                         </div>
                     </form>
                 </div>

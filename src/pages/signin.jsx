@@ -1,11 +1,9 @@
 import React from "react";
 import './signin.css';
-import { useNavigate } from 'react-router-dom';
 import { FaLock, FaUser } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 export const Signin = () => {
-
-    const navigate = useNavigate();
     return (
         <div className='background'>
             <div className='wrapper'>
@@ -25,13 +23,11 @@ export const Signin = () => {
                                 <input type='checkbox'/>
                                 Remember me
                             </label>
-                            <a href='#'> Forgot password?</a>
+                            <Link to="/register">Forgot Password?</Link>
                         </div>
                         <button type='submit'>Login</button>
-                        <div className='register'>
-                            <p>Don't have an account?
-                                <a href='/register' onClick={() => navigate("/register")}> Register</a>  
-                            </p>   
+                        <div className='register'> 
+                            <Link to="/register">Don't have an account?</Link>
                         </div>
                     </form>
                 </div>

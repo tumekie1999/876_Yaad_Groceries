@@ -32,11 +32,14 @@
   align-items: center;
   color: white;
   font-size: 1rem;
+  text-decoration: none;
 }
 
-.links p {
+.links :any-link {
   margin-left: 20px;
   font-size: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -53,9 +56,11 @@
       font-size: 0.9rem; /* Reduce input font size for smaller screens */
   }
 
-  .links p {
+  .links :any-link {
       margin-left: 10px;
       font-size: 0.9rem;
+      color: white;
+      text-decoration: none;
   }
 
   .logo img {
@@ -86,9 +91,11 @@
       flex-direction: column;
   }
 
-  .links p {
+  .links :any-link {
       margin: 5px 0;
       font-size: 0.8rem;
+      color: white;
+      text-decoration: none;
   }
 
   .logo img {

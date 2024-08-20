@@ -5,7 +5,7 @@ import { Register } from "./pages/register";
 import { Shop } from "./pages/shop/shop";
 import { Contact } from "./pages/contact";
 import Navbar from "./components/navbar";
-// import { Cart } from "./pages/cart/cart";
+import { Cart } from "./pages/cart/cart";
 
 export default function Main() {
     return (
@@ -16,7 +16,7 @@ export default function Main() {
                 <Route path="/signin" element={<Signin />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/contact" element={<Contact />} />
-                {/* <Route path="/cart" element={<Cart />} /> */}
+                <Route path="/cart" element={<Cart />} />
             </Routes>
         </div>
         

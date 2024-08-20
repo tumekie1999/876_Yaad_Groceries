@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { ShoppingCart } from "phosphor-react";
 import Searchbar from './searchbar';
 import logo from "../assets/logo.png";
 import './navbar.css';
@@ -19,6 +20,9 @@ export default function Navbar() {
                 <Link to="/"> Shop </Link>
                 <Link to="/signin"> Signin </Link>
                 <Link to="/contact"> Contact </Link>
+                <Link to="/cart">
+                    <ShoppingCart size={32} />
+                </Link>
             </div>
         </div>
     );
